@@ -62,6 +62,11 @@ stylesheets[only screen and (min-width: 992px)][] = styles/992.css
 ;scripts[] = js/script.js
 
 
+; ----------------------------------------------------------------------------
+; Regions
+; ----------------------------------------------------------------------------
+; these content regions are available for block placement
+; some are special hidden regions: page_top, page_bottom, and help
 
 ; This section lists the regions defined in Zen's default page.tpl.php and
 ; maintenance-page.tpl.php files. The name in brackets is the machine name of
@@ -78,15 +83,23 @@ stylesheets[only screen and (min-width: 992px)][] = styles/992.css
 ; And you'll use this variable in maintenance-page.tpl.php:
 ;   <?php print $header_top; ?>
 
-regions[header]         = Header
-regions[navigation]     = Navigation bar
-regions[highlighted]    = Highlighted
-regions[help]           = Help
-regions[content]        = Content
-regions[sidebar_first]  = First sidebar
+regions[header] = Header
+regions[navigation] = Navigation bar
+
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[content_top] = Content Top
+regions[content] = Content
+regions[content_bottom] = Content Bottom
+regions[sidebar_first] = First sidebar
 regions[sidebar_second] = Second sidebar
-regions[footer]         = Footer
-regions[bottom]         = Page bottom
+
+regions[footer_1] = Footer 1
+regions[footer_2] = Footer 2
+regions[footer_3] = Footer 3
+regions[footer] = Footer
+egions[footer_bottom] = Footer Bottom
+regions[bottom] = Page bottom
 
 ; The page_top and page_bottom regions are hidden, which means they will not
 ; show up on the blocks administration page. But they are required in order for
